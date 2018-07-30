@@ -32,7 +32,7 @@ class Home extends Component {
         <Nav width={this.state.width} />
         <div className="container" style={{ marginTop: `-72px` }} >
           <Cover width={this.state.width} height={this.state.height} />
-
+          <About />
         </div>
       </div>
     )

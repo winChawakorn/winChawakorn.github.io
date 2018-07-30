@@ -8,20 +8,25 @@ class Cover extends Component {
       <div style={{
         height: this.props.height,
         width: this.props.width,
-        background: `linear-gradient(rgba(196, 218, 255, 0.5), rgba(196, 218, 255, 0.5)), url(${cover})`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${cover})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no- repeat',
-        display: 'table'
+        display: 'table',
+        color: 'white'
       }}>
-        <div style={{
-          textAlign: 'center',
-          fontFamily: 'Raleway',
-          fontSize: '50px',
-          display: 'table-cell',
-          verticalAlign: 'middle',
-        }}>
+        <div
+          style={{
+            textAlign: 'center',
+            fontSize: '50px',
+            display: 'table-cell',
+            verticalAlign: 'middle',
+          }}>
           <span>Chawakorn</span>
-          <Divider section style={{ width: `50%`, marginLeft: '25%' }} horizontal>I'm</Divider>
+          <Divider section style={{
+            width: `50%`,
+            marginLeft: '25%',
+            color: 'white',
+          }} horizontal>I'm</Divider>
           <p style={{ fontSize: '20px' }}>Software Developer</p>
         </div>
       </div>

@@ -68,14 +68,18 @@ class Nav extends Component {
 
   render() {
     return (
-      <div style={{ position: 'sticky', top: '0' }}>
+      <div style={{
+        position: 'sticky',
+        top: '0',
+        opacity: this.props.width > this.overflowWidth ? '0.7' : '1'
+      }}>
         <Menu icon="labeled" style={{
           padding: this.props.width > this.overflowWidth ? '0 150px' : '0',
         }}>
           <img src={logo}
             alt="logo"
             height="70"
-            width="115"
+            width="120"
             style={{ padding: '20px 10px' }}
           />
           {this.menu()}
