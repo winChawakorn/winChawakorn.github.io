@@ -7,7 +7,7 @@ class About extends Component {
         display: 'flex',
         flexWrap: 'wrap'
       }}>
-
+        
       </div>
     )
   }
