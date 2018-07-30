@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Nav from './Nav'
-import cover from '../static/cover.JPG'
-import { Divider } from 'semantic-ui-react'
+import Cover from './Cover'
+import About from './About'
 
 class Home extends Component {
   constructor(props) {
@@ -31,26 +31,8 @@ class Home extends Component {
       <div>
         <Nav width={this.state.width} />
         <div className="container" style={{ marginTop: `-72px` }} >
-          <div style={{
-            height: this.state.height,
-            width: this.state.width,
-            background: `linear-gradient(rgba(196, 218, 255, 0.5), rgba(196, 218, 255, 0.5)), url(${cover})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no- repeat',
-            display: 'table'
-          }}>
-            <div style={{
-              textAlign: 'center',
-              fontFamily: 'helvetica',
-              fontSize: '50px',
-              display: 'table-cell',
-              verticalAlign: 'middle',
-            }}>
-              <b>Chawakorn</b>
-              <Divider style={{ width: `50%`, marginLeft: '25%' }} />
-              <span style={{ fontSize: '20px' }}>Software Developer</span>
-            </div>
-          </div>
+          <Cover width={this.state.width} height={this.state.height} />
+
         </div>
       </div>
     )
