@@ -1,31 +1,16 @@
 import React, { Component } from 'react'
 import { Menu, Icon, Sidebar } from 'semantic-ui-react'
 import logo from '../static/logo.png'
-import './Nav.css'
 
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: 0,
       sidebar: false,
     };
-    this.updateWindowWidth = this.updateWindowWidth.bind(this);
+    this.overflowWidth = 815
     this.toggleSidebar = this.toggleSidebar.bind(this)
     this.hideSidebar = this.hideSidebar.bind(this)
-  }
-
-  componentDidMount() {
-    this.updateWindowWidth();
-    window.addEventListener('resize', this.updateWindowWidth);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowWidth);
-  }
-
-  updateWindowWidth() {
-    this.setState({ width: window.innerWidth });
   }
 
   handleItemClick(e, { name }) {
@@ -62,7 +47,7 @@ class Nav extends Component {
   }
 
   menu() {
-    if (this.state.width < 465) {
+    if (this.props.width < this.overflowWidth) {
       return (
         <Menu.Item
           name="burger"
@@ -83,17 +68,19 @@ class Nav extends Component {
 
   render() {
     return (
-      <div>
-        <Menu icon="labeled" >
+      <div style={{ position: 'sticky', top: '0' }}>
+        <Menu icon="labeled" style={{
+          padding: this.props.width > this.overflowWidth ? '0 150px' : '0',
+        }}>
           <img src={logo}
             alt="logo"
             height="70"
-            width="100"
-            className="logo"
+            width="115"
+            style={{ padding: '20px 10px' }}
           />
           {this.menu()}
         </Menu>
-        {this.state.width <= 465 ?
+        {this.props.width <= this.overflowWidth ?
           <Sidebar
             as={Menu}
             animation='overlay'
