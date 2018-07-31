@@ -71,6 +71,7 @@ class Nav extends Component {
       <div style={{
         position: 'sticky',
         top: '0',
+        zIndex: '999',
         opacity: this.props.width > this.overflowWidth ? '0.7' : '1'
       }}>
         <Menu icon="labeled" style={{
