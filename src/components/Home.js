@@ -23,14 +23,17 @@ class Home extends Component {
   }
 
   updateWindowDimension() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.setState({
+      width: window.innerWidth,
+      height: this.state.height === 0 ? window.innerHeight : this.state.height
+    });
   }
 
   render() {
     return (
       <div>
         <Nav width={this.state.width} />
-        <div className="container" style={{ marginTop: `-72px` }} >
+        <div>
           <Cover width={this.state.width} height={this.state.height} />
           <About />
         </div>
