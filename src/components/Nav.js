@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Menu, Icon, Sidebar } from 'semantic-ui-react'
+import Scroll from 'react-scroll'
 import logo from '../static/logo.png'
+
+const scroll = Scroll.animateScroll
 
 class Nav extends Component {
   constructor(props) {
@@ -13,8 +16,11 @@ class Nav extends Component {
     this.hideSidebar = this.hideSidebar.bind(this)
   }
 
-  handleItemClick(e, { name }) {
-    //Scroll to element
+  handleItemClick(name) {
+    switch (name) {
+      case 'home': scroll.scrollToTop(); break
+      default:
+    }
   }
 
   toggleSidebar() {
@@ -35,8 +41,7 @@ class Nav extends Component {
       return (
         < Menu.Item
           key={name}
-          name={name}
-          onClick={this.handleItemClick}
+          onClick={() => this.handleItemClick(name)}
         >
           <Icon name={icon} />
           {name.charAt(0).toUpperCase().concat(name.slice(1))}
