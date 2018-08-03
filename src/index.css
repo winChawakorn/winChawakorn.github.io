@@ -7,4 +7,20 @@ body {
 .raleway {
   font-family: 'Raleway';
   font-size: 30px;
-} 
+}
+
+.nav{
+  animation: slideDown 1s;
+}
+
+p{
+  animation: appear 2s;
+}
+
+@keyframes appear {
+  from {opacity: 0;} to {opacity: 1;}
+}
+
+@keyframes slideDown {
+  from {margin-top: -3em;} to {margin-top: 0;}
+}

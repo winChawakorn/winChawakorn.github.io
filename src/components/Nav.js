@@ -73,13 +73,15 @@ class Nav extends Component {
 
   render() {
     return (
-      <div style={{
-        position: 'fixed',
-        top: '0',
-        zIndex: '99',
-        width: `100%`,
-        opacity: '0.7'
-      }}>
+      <div
+        className="nav"
+        style={{
+          position: 'fixed',
+          top: '0',
+          zIndex: '99',
+          width: `100%`,
+          opacity: '0.7'
+        }}>
         <Menu icon="labeled" style={{
           padding: this.props.width > this.overflowWidth ? '0 150px' : '0',
         }}>
