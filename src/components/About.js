@@ -19,13 +19,11 @@ class About extends Component {
         flexWrap: 'wrap',
         marginTop: '50px',
       }}>
-        <img src={profile}
-          alt="profile"
-          height="400px"
-          style={{
-            margin: 'auto',
-            verticalAlign: 'text-bottom',
-          }} />
+        <div className="sticky">
+          <img src={profile}
+            alt="profile"
+            height="400px" />
+        </div>
         <div className="about">
           <div className="box">
             <p style={{
@@ -65,22 +63,23 @@ class About extends Component {
                 <p>Nationality:</p>
                 <p>Education:</p>
               </div>
-              <div style={{ width: `55%`, color: '#b56307' }}>
+              <div style={{ width: `55%`, color: 'blue' }}>
                 <p>Chawakorn</p>
                 <p>Suphepre</p>
                 <p>Win</p>
                 <p>{this.getAge()}</p>
                 <p>25 August 1997</p>
                 <p><Flag name="th" />Thai</p>
-                <p>
+                <p style={{ color: 'green' }}>
                   <img
                     src={ku}
                     alt="ku"
                     width="23"
                     style={{ position: 'relative', top: '5px', marginRight: '10px' }} />
                   Kasetsart University
-                  </p>
-                <p>
+                </p>
+                <p style={{ fontSize: '16px' }}>(Software & Knowledge Engineering)</p>
+                <p style={{ color: 'red' }}>
                   <img
                     src={ac}
                     alt="ac"
@@ -108,8 +107,15 @@ class About extends Component {
             padding: 20px;
             border-radius: 10px;
           }
+          .sticky {
+            margin: auto;
+            margin-bottom: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom : 0;
+          }
         `}</style>
-      </Container>
+      </Container >
     )
   }
 }
