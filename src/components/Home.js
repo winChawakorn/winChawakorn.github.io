@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Nav from './Nav'
 import Cover from './Cover'
 import About from './About'
+import Experiences from './Experiences'
 
 class Home extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class Home extends Component {
         <div>
           <Cover width={this.state.width} height={this.state.height} />
           <About />
+          <Experiences />
         </div>
       </div>
     )
