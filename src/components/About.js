@@ -70,7 +70,7 @@ class About extends Component {
                     src={ku}
                     alt="ku"
                     width="23"
-                    style={{ position: 'relative', top: '5px', marginRight: '10px' }} />
+                    className="schoolicon" />
                   Kasetsart University
                 </p>
                 <p style={{ fontSize: '16px' }}>(Software & Knowledge Engineering)</p>
@@ -79,7 +79,8 @@ class About extends Component {
                     src={ac}
                     alt="ac"
                     width="30"
-                    style={{ position: 'relative', top: '10px', marginRight: '10px' }} />
+                    className="schoolicon"
+                    style={{ top: '10px' }} />
                   Assumption College 130
                 </p>
               </div>
@@ -97,34 +98,6 @@ class About extends Component {
             <Progress percent={70} color="blue" active>Photoshop</Progress>
           </div>
         </div>
-        <style>{`
-          .about {
-            max-width: 700px;
-            text-align: center;
-          }
-          .about p {
-            margin: 5px 0;
-          }
-          .about i {
-            margin-right: 10px;
-          }
-          .box {
-            background: #f2f2f2;
-            padding: 20px;
-            border-radius: 10px;
-          }
-          .sticky {
-            margin: auto;
-            margin-bottom: 0;
-            position: -webkit-sticky;
-            position: sticky;
-            bottom : 0;
-          }
-          .box-title {
-            font-size: 23px;
-            font-weight: bold;
-          }
-        `}</style>
       </Container >
     )
   }

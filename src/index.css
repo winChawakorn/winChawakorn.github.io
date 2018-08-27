@@ -9,14 +9,64 @@ body {
   font-size: 30px;
 }
 
+.cover {
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
 .nav{
   animation: slideDown 1s;
 }
 
-p{
+p, span{
   animation: appear 2s;
 }
 
+.sticky {
+  margin: auto;
+  margin-bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom : 0;
+}
+
+.box {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.box-title {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/* about */
+.about {
+  max-width: 700px;
+  text-align: center;
+}
+
+.about p {
+  margin: 5px 0;
+}
+
+.about i {
+  margin-right: 10px;
+}
+
+.schoolicon {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+/* keyframe */
 @keyframes appear {
   from {opacity: 0;} to {opacity: 1;}
 }

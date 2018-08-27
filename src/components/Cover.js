@@ -8,16 +8,7 @@ class Cover extends Component {
     return (
       <Parallax bgImage={cover} strength={-100}>
         <div style={{ height: this.props.height, background: 'rgb(0, 0, 0, 0.6)' }}>
-          <div
-            style={{
-              textAlign: 'center',
-              fontSize: '50px',
-              position: 'absolute',
-              top: `50%`,
-              left: `50%`,
-              transform: 'translate(-50%,-50%)',
-              color: 'white'
-            }}>
+          <div className="cover">
             <span>Chawakorn</span>
             <Divider section style={{
               width: `50%`,
