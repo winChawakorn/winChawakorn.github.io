@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import profile from '../static/me.png'
-import { Container, Icon, Flag } from 'semantic-ui-react'
+import { Container, Icon, Flag, Progress } from 'semantic-ui-react'
 import ac from '../static/ac.png'
 import ku from '../static/ku.png'
 import moment from 'moment'
@@ -26,10 +26,7 @@ class About extends Component {
         </div>
         <div className="about">
           <div className="box">
-            <p style={{
-              fontSize: '23px',
-              fontWeight: 'bold'
-            }}>
+            <p className="box-title">
               <Icon name="user outline" />About me
           </p>
             <p style={{
@@ -43,10 +40,8 @@ class About extends Component {
           </p>
           </div>
           <div className="box" style={{ marginTop: '20px' }}>
-            <p style={{
+            <p className="box-title" style={{
               marginBottom: '0',
-              fontSize: '23px',
-              fontWeight: 'bold'
             }}>
               <Icon name="address card outline" />Personal Information
             </p>
@@ -85,10 +80,21 @@ class About extends Component {
                     alt="ac"
                     width="30"
                     style={{ position: 'relative', top: '10px', marginRight: '10px' }} />
-                  Assumption College
+                  Assumption College 130
                 </p>
               </div>
             </div>
+          </div>
+          <div className="box" style={{ marginTop: '20px' }}>
+            <p><Icon name="star outline" />Skills</p>
+            <Progress percent={90} color="red" active>Java script (NodeJS, ReactJS, ExpressJS)</Progress>
+            <Progress percent={100} color="yellow" active>Java</Progress>
+            <Progress percent={100} color="purple" active>HTML, CSS</Progress>
+            <Progress percent={95} color="orange" active>SQL</Progress>
+            <Progress percent={80} color="green" active>C</Progress>
+            <Progress percent={60} color="pink" active>PHP</Progress>
+            <Progress percent={80} color="teal" active>Docker</Progress>
+            <Progress percent={70} color="blue" active>Photoshop</Progress>
           </div>
         </div>
         <style>{`
@@ -113,6 +119,10 @@ class About extends Component {
             position: -webkit-sticky;
             position: sticky;
             bottom : 0;
+          }
+          .box-title {
+            font-size: 23px;
+            font-weight: bold;
           }
         `}</style>
       </Container >
