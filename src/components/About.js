@@ -86,7 +86,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-          <div className="box" style={{ marginTop: '20px' }}>
+          <div className="box" style={{ margin: '20px 0' }}>
             <p><Icon name="star outline" />Skills</p>
             <Progress percent={90} color="red" active>Java script (NodeJS, ReactJS, ExpressJS)</Progress>
             <Progress percent={100} color="yellow" active>Java</Progress>
