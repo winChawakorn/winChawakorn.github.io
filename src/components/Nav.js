@@ -19,6 +19,13 @@ class Nav extends Component {
   handleItemClick(name) {
     switch (name) {
       case 'home': scroll.scrollToTop(); break
+      case 'about': scroll.scrollTo('about', {
+        duration: 1500,
+        delay: 100,
+        smooth: true,
+        containerId: 'about',
+        offset: 50,
+      }); break
       default:
     }
   }
@@ -41,6 +48,7 @@ class Nav extends Component {
       return (
         < Menu.Item
           key={name}
+          to={name}
           onClick={() => this.handleItemClick(name)}
         >
           <Icon name={icon} />

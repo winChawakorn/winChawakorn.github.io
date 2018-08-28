@@ -3,7 +3,7 @@ import { Icon, Image } from 'semantic-ui-react'
 import Card from './Card'
 import noburo from '../static/noburo.png'
 import noburoall from '../static/noburoall.jpg'
-import localhackday from '../static/localhackday.png'
+import localhackday from '../static/localhackday.svg'
 import localhackday1st from '../static/localhackday1st.JPG'
 import localhackdayall from '../static/localhackdayall.jpeg'
 

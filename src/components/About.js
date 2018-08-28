@@ -27,7 +27,7 @@ class About extends Component {
         <div className="about">
           <div className="box">
             <p className="box-title">
-              <Icon name="user outline" />About me
+              <Icon name="user" style={{ color: 'blue' }} />About me
           </p>
             <p style={{
               fontSize: '20px',
@@ -43,7 +43,7 @@ class About extends Component {
             <p className="box-title" style={{
               marginBottom: '0',
             }}>
-              <Icon name="address card outline" />Personal Information
+              <Icon name="address card" style={{color: 'grey', fontSize: '30px'}} />Personal Information
             </p>
             <div style={{ display: 'flex', fontSize: '20px' }}>
               <div style={{
@@ -87,7 +87,7 @@ class About extends Component {
             </div>
           </div>
           <div className="box" style={{ margin: '20px 0' }}>
-            <p><Icon name="star outline" />Skills</p>
+            <p><Icon name="star" style={{ color: 'red' }} />Skills</p>
             <Progress percent={90} color="red" active>Java script (NodeJS, ReactJS, ExpressJS)</Progress>
             <Progress percent={100} color="yellow" active>Java</Progress>
             <Progress percent={100} color="purple" active>HTML, CSS</Progress>

@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import Scroll from 'react-scroll'
 import Nav from './Nav'
 import Cover from './Cover'
 import About from './About'
 import Experiences from './Experiences'
+
+const Element = Scroll.Element
 
 class Home extends Component {
   constructor(props) {
@@ -36,7 +39,7 @@ class Home extends Component {
         <Nav width={this.state.width} />
         <div>
           <Cover width={this.state.width} height={this.state.height} />
-          <About />
+          <Element name="about"><About /></Element>
           <Experiences />
         </div>
       </div>
