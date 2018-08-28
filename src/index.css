@@ -9,6 +9,11 @@ body {
   font-size: 30px;
 }
 
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .grey-section {
   background: #f2f2f2;
   padding: 40px;
@@ -67,11 +72,11 @@ p, span{
   background: #ffffff;
   max-width: 550px;
   margin: auto;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  /* padding: 40px 20px 20px 20px; */
   padding: 20px;
-  box-shadow: 0px 15px 20px #c6c6c6;
+  box-shadow: 0px 10px 20px #c6c6c6;
 }
 
 #card a img {

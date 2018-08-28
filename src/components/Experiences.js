@@ -8,12 +8,20 @@ class Experiences extends Component {
     return (
       <div className="grey-section">
         <p className="title"><Icon name="book" />Experiences</p>
-        <Card
-          href="https://noburo.co/"
-          image={noburo}
-          title="Noburo"
-          detail="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, aliquid, illum ex nobis eos reiciendis exercitationem provident repellat laudantium saepe veritatis. Distinctio tempore aliquid eaque velit assumenda laudantium ullam magni?"
-        />
+        <div className="flexwrap">
+          <Card
+            href="https://noburo.co/"
+            image={noburo}
+            title="Noburo"
+            detail="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, aliquid, illum ex nobis eos reiciendis exercitationem provident repellat laudantium saepe veritatis. Distinctio tempore aliquid eaque velit assumenda laudantium ullam magni?"
+          />
+          <Card
+            href="https://noburo.co/"
+            image={noburo}
+            title="Noburo"
+            detail="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, aliquid, illum ex nobis eos reiciendis exercitationem provident repellat laudantium saepe veritatis. Distinctio tempore aliquid eaque velit assumenda laudantium ullam magni?"
+          />
+        </div>
       </div >
     )
   }
