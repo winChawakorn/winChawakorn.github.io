@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class Card extends Component {
   render() {
-    const image = <img src={this.props.image} className="center" />
+    const image = <img src={this.props.image} className="center" alt="noburo" />
     return (
       <div id="card">
         {this.props.href ? <a href={this.props.href} target="_blank">{image}</a> : <a>{image}</a>}
