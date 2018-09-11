@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import profile from '../static/me.png'
-import { Container, Icon, Flag, Progress } from 'semantic-ui-react'
+import profile from '../static/me.jpg'
+import { Image, Icon, Flag, Progress } from 'semantic-ui-react'
 import ac from '../static/ac.png'
 import ku from '../static/ku.png'
 import moment from 'moment'
@@ -14,21 +14,17 @@ class About extends Component {
 
   render() {
     return (
-      <Container style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        marginTop: '50px',
-      }}>
-        <div className="sticky">
+      <div className="about">
+        <p className="title"><Icon name="user" />About</p>
+        <div className="flexwrap">
           <img src={profile}
+            className="shadow"
             alt="profile"
-            height="400px" />
-        </div>
-        <div className="about">
+            height="215px" />
           <div className="box">
             <p className="box-title">
               <Icon name="user" style={{ color: 'blue' }} />About me
-          </p>
+            </p>
             <p style={{
               fontSize: '20px',
               textAlign: 'left'
@@ -37,13 +33,13 @@ class About extends Component {
               I'm a junior student majoring in software engineering at Kasetsart University.
               Nowadays, our life has been upgraded because of the abilities of the technologies
               around us, so I'm in love to develop the software for human's better life.
-          </p>
+            </p>
           </div>
-          <div className="box" style={{ marginTop: '20px' }}>
-            <p className="box-title" style={{
-              marginBottom: '0',
-            }}>
-              <Icon name="address card" style={{color: 'grey', fontSize: '30px'}} />Personal Information
+        </div>
+        <div className="flexwrap">
+          <div className="box">
+            <p className="box-title" style={{ padding: '20px 0' }}>
+              <Icon name="address card" style={{ color: 'grey', fontSize: '30px' }} />Personal Information
             </p>
             <div style={{ display: 'flex', fontSize: '20px' }}>
               <div style={{
@@ -86,7 +82,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-          <div className="box" style={{ margin: '20px 0' }}>
+          <div className="box">
             <p><Icon name="star" style={{ color: 'red' }} />Skills</p>
             <Progress percent={90} color="red" active>Java script (NodeJS, ReactJS, ExpressJS)</Progress>
             <Progress percent={100} color="yellow" active>Java</Progress>
@@ -98,7 +94,7 @@ class About extends Component {
             <Progress percent={70} color="blue" active>Photoshop</Progress>
           </div>
         </div>
-      </Container >
+      </div>
     )
   }
 }
