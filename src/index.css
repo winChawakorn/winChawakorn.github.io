@@ -38,11 +38,11 @@ body {
   color: white;
 }
 
-.nav{
+.nav, .box{
   animation: slideDown 1s;
 }
 
-p, span{
+p, span, img{
   animation: appear 2s;
 }
 
