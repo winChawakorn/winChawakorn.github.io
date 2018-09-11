@@ -16,25 +16,24 @@ class About extends Component {
     return (
       <div className="about">
         <p className="title"><Icon name="user" />About</p>
-        <div className="flexwrap">
-          <img src={profile}
-            className="shadow"
+        <div className="box">
+          <img
+            className="profile"
+            src={profile}
             alt="profile"
             height="215px" />
-          <div className="box">
-            <p className="box-title">
-              <Icon name="user" style={{ color: 'blue' }} />About me
+          <p className="box-title">
+            <Icon name="user" style={{ color: 'blue' }} />About me
             </p>
-            <p style={{
-              fontSize: '20px',
-              textAlign: 'left'
-            }}>
-              <span style={{ marginLeft: '40px' }} />Hello, I'm <b style={{ color: 'blue' }}>Chawakorn</b>. I'm a software developer.
-              I'm a junior student majoring in software engineering at Kasetsart University.
-              Nowadays, our life has been upgraded because of the abilities of the technologies
-              around us, so I'm in love to develop the software for human's better life.
+          <p style={{
+            fontSize: '20px',
+            textAlign: 'left'
+          }}>
+            <span style={{ marginLeft: '40px' }} />Hello, I'm <b style={{ color: 'blue' }}>Chawakorn</b>. I'm a software developer.
+            I'm a junior student majoring in software engineering at Kasetsart University.
+            Nowadays, our life has been upgraded because of the abilities of the technologies
+            around us, so I'm in love to develop the software for human's better life.
             </p>
-          </div>
         </div>
         <div className="flexwrap">
           <div className="box">
@@ -94,7 +93,7 @@ class About extends Component {
             <Progress percent={70} color="blue" active>Photoshop</Progress>
           </div>
         </div>
-      </div>
+      </div >
     )
   }
 }
