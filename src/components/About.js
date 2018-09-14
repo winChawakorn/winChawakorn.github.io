@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import profile from '../static/me.png'
-import { Image, Icon, Flag, Progress } from 'semantic-ui-react'
+import { Icon, Flag, Progress } from 'semantic-ui-react'
 import ac from '../static/ac.png'
 import ku from '../static/ku.png'
 import moment from 'moment'
@@ -14,7 +14,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="about">
+      <div className="about section">
         <p className="title"><Icon name="user" />About</p>
         <div className="box flexwrap">
           <img

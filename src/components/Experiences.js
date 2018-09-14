@@ -10,7 +10,7 @@ import localhackdayall from '../static/localhackdayall.jpeg'
 class Experiences extends Component {
   render() {
     return (
-      <div className="grey-section">
+      <div className="grey section">
         <p className="title"><Icon name="book" />Experiences</p>
         <div className="flexwrap">
           <Card

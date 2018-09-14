@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { Menu, Icon, Sidebar } from 'semantic-ui-react'
-import Scroll from 'react-scroll'
+import { Link } from 'react-scroll'
 import logo from '../static/logo.png'
-
-const scroll = Scroll.animateScroll
 
 class Nav extends Component {
   constructor(props) {
@@ -14,20 +12,6 @@ class Nav extends Component {
     this.overflowWidth = 815
     this.toggleSidebar = this.toggleSidebar.bind(this)
     this.hideSidebar = this.hideSidebar.bind(this)
-  }
-
-  handleItemClick(name) {
-    switch (name) {
-      case 'home': scroll.scrollToTop(); break
-      case 'about': scroll.scrollTo('about', {
-        duration: 1500,
-        delay: 100,
-        smooth: true,
-        containerId: 'about',
-        offset: 50,
-      }); break
-      default:
-    }
   }
 
   toggleSidebar() {
@@ -46,14 +30,12 @@ class Nav extends Component {
       { name: 'projects', icon: 'file code' }]
     const getMenuItem = (name, icon) => {
       return (
-        < Menu.Item
-          key={name}
-          to={name}
-          onClick={() => this.handleItemClick(name)}
-        >
-          <Icon name={icon} />
-          {name.charAt(0).toUpperCase().concat(name.slice(1))}
-        </Menu.Item >
+        <Link to={name} spy={true} smooth={true} duration={800}>
+          <Menu.Item key={name} className="nav-link">
+            <Icon name={icon} />
+            {name.charAt(0).toUpperCase().concat(name.slice(1))}
+          </Menu.Item>
+        </Link>
       )
     }
     return menuList.map(item => getMenuItem(item.name, item.icon))
