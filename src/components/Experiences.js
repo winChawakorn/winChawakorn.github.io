@@ -18,7 +18,7 @@ class Experiences extends Component {
             image={noburo}
             title="Noburo"
             detail="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, aliquid, illum ex nobis eos reiciendis exercitationem provident repellat laudantium saepe veritatis. Distinctio tempore aliquid eaque velit assumenda laudantium ullam magni?"
-            footer={<Image src={noburoall} size="huge" />}
+            footer={<Image src={noburoall} size="massive" />}
           />
           <Card
             href="https://youtu.be/_n9Djh__SBo"
@@ -27,8 +27,8 @@ class Experiences extends Component {
             detail="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, aliquid, illum ex nobis eos reiciendis exercitationem provident repellat laudantium saepe veritatis. Distinctio tempore aliquid eaque velit assumenda laudantium ullam magni?"
             footer={
               <span>
-                <Image src={localhackday1st} size="huge" />
-                <Image src={localhackdayall} size="huge" />
+                <Image src={localhackday1st} size="massive" />
+                <Image src={localhackdayall} size="massive" />
               </span>
             }
           />
