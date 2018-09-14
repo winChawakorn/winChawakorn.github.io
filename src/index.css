@@ -118,9 +118,16 @@ p, span, img{
 }
 
 .about .box {
-  max-width: 700px;
+  max-width: 1250px;
+  width: auto;
   margin: 0 auto;
   padding: 30px 40px;
+}
+
+.about-me{
+  max-width: 700px;
+  padding-left: 20px;
+  margin: auto;
 }
 
 .about > div:first-child {
@@ -129,10 +136,10 @@ p, span, img{
 }
 
 .profile {
+  background: white;
+  padding: 10px 60px 0 60px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
-  border: 2px solid red;
 }
 
 .about .flexwrap {

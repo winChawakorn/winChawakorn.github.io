@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import profile from '../static/me.jpg'
+import profile from '../static/me.png'
 import { Image, Icon, Flag, Progress } from 'semantic-ui-react'
 import ac from '../static/ac.png'
 import ku from '../static/ku.png'
@@ -16,24 +16,26 @@ class About extends Component {
     return (
       <div className="about">
         <p className="title"><Icon name="user" />About</p>
-        <div className="box">
+        <div className="box flexwrap">
           <img
             className="profile"
             src={profile}
             alt="profile"
-            height="215px" />
-          <p className="box-title">
-            <Icon name="user" style={{ color: 'blue' }} />About me
+            height="300px" />
+          <div className="about-me">
+            <p className="box-title">
+              <Icon name="user" style={{ color: 'blue' }} />About me
             </p>
-          <p style={{
-            fontSize: '20px',
-            textAlign: 'left'
-          }}>
-            <span style={{ marginLeft: '40px' }} />Hello, I'm <b style={{ color: 'blue' }}>Chawakorn</b>. I'm a software developer.
-            I'm a junior student majoring in software engineering at Kasetsart University.
-            Nowadays, our life has been upgraded because of the abilities of the technologies
-            around us, so I'm in love to develop the software for human's better life.
+            <p style={{
+              fontSize: '20px',
+              textAlign: 'left'
+            }}>
+              <span style={{ marginLeft: '40px' }} />Hello, I'm <b style={{ color: 'blue' }}>Chawakorn</b>. I'm a software developer.
+              I'm a junior student majoring in software engineering at Kasetsart University.
+              Nowadays, our life has been upgraded because of the abilities of the technologies
+              around us, so I'm in love to develop the software for human's better life.
             </p>
+          </div>
         </div>
         <div className="flexwrap">
           <div className="box">
