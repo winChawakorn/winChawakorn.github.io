@@ -30,8 +30,8 @@ class Nav extends Component {
       { name: 'projects', icon: 'file code' }]
     const getMenuItem = (name, icon) => {
       return (
-        <Link to={name} spy={true} smooth={true} duration={800}>
-          <Menu.Item key={name} className="nav-link">
+        <Link to={name} key={name} spy={true} smooth={true} duration={800}>
+          <Menu.Item className="nav-link">
             <Icon name={icon} />
             {name.charAt(0).toUpperCase().concat(name.slice(1))}
           </Menu.Item>

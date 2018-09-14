@@ -14,6 +14,7 @@ class Cover extends Component {
               width: `50%`,
               marginLeft: '25%',
               color: 'yellow',
+              paddingTop: '10px'
             }} horizontal>I'm</Divider>
             <p style={{ fontSize: '20px' }}>Software Developer</p>
           </div>

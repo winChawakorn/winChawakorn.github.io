@@ -4,6 +4,7 @@ import Nav from './Nav'
 import Cover from './Cover'
 import About from './About'
 import Experiences from './Experiences'
+import Projects from './Projects'
 
 class Home extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class Home extends Component {
           <Element name="home"><Cover width={this.state.width} height={this.state.height} /></Element>
           <Element name="about"><About /></Element>
           <Element name="experiences"><Experiences /></Element>
+          <Element name="projects"><Projects /></Element>
         </div>
       </div>
     )
