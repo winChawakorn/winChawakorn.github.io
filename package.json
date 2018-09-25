@@ -23,7 +23,7 @@
     "test": "react-scripts test --env=jsdom",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "update": "git checkout master && git pull origin gh-pages && git push origin master && git checkout develop",
+    "update": "git checkout master && git pull --no-edit origin gh-pages && git push origin master && git checkout develop",
     "master": "yarn deploy && yarn update",
     "eject": "react-scripts eject"
   }
