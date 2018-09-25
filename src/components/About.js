@@ -35,7 +35,7 @@ class About extends Component {
               Nowadays, our life has been upgraded because of the abilities of the technologies
               around us, so I'm in love to develop the software for human's better life.
             </p>
-            <div className="contact-bar"><Icon name="github" /><Icon name="facebook" /></div>
+            <div className="contact-bar"><a target="_blank" rel="noopener noreferrer" href="http://github.com/winchawakorn"><Icon name="github" color="black" /></a><a target="_blank" rel="noopener noreferrer" href="http://facebook.com/winchawakorn"><Icon name="facebook" color="blue" /></a></div>
           </div>
         </div>
         <div className="flexwrap">
