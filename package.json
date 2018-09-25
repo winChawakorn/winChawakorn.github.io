@@ -19,10 +19,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "build": "gh pages -d build",
+    "update": "git checkout master && git pull origin gh-pages && git push origin master",
+    "deploy": "yarn build && yarn update",
     "eject": "react-scripts eject"
   }
 }
