@@ -53,7 +53,6 @@ p, span, img{
 }
 
 .box {
-  background: #f2f2f2;
   padding: 20px;
   border-radius: 10px;
 }
@@ -62,7 +61,7 @@ p, span, img{
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 0;
+  padding: 20px 0;
 }
 
 #card {
@@ -117,6 +116,10 @@ p, span, img{
 }
 
 /* about */
+.about {
+  padding-bottom: 50px;
+}
+
 .about p {
   margin: 5px 0;
 }
@@ -129,13 +132,12 @@ p, span, img{
   max-width: 1250px;
   width: auto;
   margin: 0 auto;
-  padding: 30px 40px;
+  padding: 0 30px;
 }
 
 .about-me{
   max-width: 700px;
   padding-left: 20px;
-  margin: auto;
 }
 
 .about > div:first-child {
@@ -143,11 +145,22 @@ p, span, img{
   margin: auto;
 }
 
+.contact-bar {
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+.contact-bar i {
+  padding-left: 30px;
+  padding-right: 70px;
+}
+
 .profile {
-  background: white;
-  padding: 10px 60px 0 60px;
+  background: #efefef;
+  padding: 10px 40px 0 40px;
   margin-left: auto;
   margin-right: auto;
+  background-image: linear-gradient(to bottom right, #efefef, #e0ecff);
 }
 
 .about .flexwrap {

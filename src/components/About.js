@@ -21,7 +21,7 @@ class About extends Component {
             className="profile"
             src={profile}
             alt="profile"
-            height="300px" />
+            height="350px" />
           <div className="about-me">
             <p className="box-title">
               <Icon name="user" style={{ color: 'blue' }} />About me
@@ -35,11 +35,12 @@ class About extends Component {
               Nowadays, our life has been upgraded because of the abilities of the technologies
               around us, so I'm in love to develop the software for human's better life.
             </p>
+            <div className="contact-bar"><Icon name="github" /><Icon name="facebook" /></div>
           </div>
         </div>
         <div className="flexwrap">
           <div className="box">
-            <p className="box-title" style={{ padding: '20px 0' }}>
+            <p className="box-title">
               <Icon name="address card" style={{ color: 'grey', fontSize: '30px' }} />Personal Information
             </p>
             <div style={{ display: 'flex', fontSize: '20px' }}>
@@ -84,7 +85,7 @@ class About extends Component {
             </div>
           </div>
           <div className="box">
-            <p><Icon name="star" style={{ color: 'red' }} />Skills</p>
+            <p className="box-title"><Icon name="star" style={{ color: 'red' }} />Skills</p>
             <Progress percent={90} color="red" active>Java script (NodeJS, ReactJS, ExpressJS)</Progress>
             <Progress percent={100} color="yellow" active>Java</Progress>
             <Progress percent={100} color="purple" active>HTML, CSS</Progress>
