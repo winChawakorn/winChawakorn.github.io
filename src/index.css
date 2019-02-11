@@ -162,6 +162,19 @@ p, span, img{
   padding-top: 20px;
 }
 
+.about-skill-logo {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.about-skill-title {
+  font-size: 20px;
+}
+
+.about-skill-container {
+  border-radius: 10px;
+}
+
 .about .flexwrap .box{
   width: 600px;
   margin-left: auto;
