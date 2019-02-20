@@ -41,8 +41,15 @@ class Experiences extends Component {
           <Card
             href="https://youtu.be/_n9Djh__SBo"
             image={localhackday}
-            title="Local Hack Day"
-            detail="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, aliquid, illum ex nobis eos reiciendis exercitationem provident repellat laudantium saepe veritatis. Distinctio tempore aliquid eaque velit assumenda laudantium ullam magni?"
+            title={
+              <div style={{ display: 'block' }}>
+                <p className="box-title">
+                  <Icon style={{ color: 'red' }} name="trophy" />{' '}1st place Local Hack Day
+                  </p>
+                <p style={{ fontSize: '20px', color: 'black', fontWeight: 'normal' }}>Student Hackathon hosted by GitHub and Major League Hacking (MLH)</p><br />
+              </div>
+            }
+            detail={<p>My team's project was <b style={{ color: 'red' }}>Touchyou</b>, an android application for wireless performing actions in PC, which the inspiration come from the promoting of the new mac book with <b style={{ color: 'red' }}>touchbar</b>.</p>}
             footer={
               <span>
                 <Image src={localhackday1st} size="massive" />
