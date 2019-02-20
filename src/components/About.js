@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import profile from '../static/me.png'
-import { Icon, Flag, Image } from 'semantic-ui-react'
+import { Icon, Flag } from 'semantic-ui-react'
 import moment from 'moment'
 import ac from '../static/ac.png'
 import ku from '../static/ku.png'
@@ -147,7 +147,7 @@ class About extends Component {
               <div className="flexwrap">
                 <img className="about-skill-logo" src={java} alt="java-logo" height="70px" />
                 <img className="about-skill-logo" src={androidstudio} alt="androidstudio-logo" height="70px" />
-                <img className="about-skill-logo" src={swift} alt="swift-logo" height="40px" height="40px" style={{ marginTop: '10px' }} />
+                <img className="about-skill-logo" src={swift} alt="swift-logo" height="40px" style={{ marginTop: '10px' }} />
                 <img className="about-skill-logo" src={xcode} alt="xcode-logo" height="70px" />
               </div>
             </div>

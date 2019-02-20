@@ -21,7 +21,7 @@ class Experiences extends Component {
                 <p className="box-title">
                   Noburo
                   </p>
-                <p style={{ fontSize: '20px', color: 'black', fontWeight: 'normal' }}>Financial wellness service for <a alt="ittp" href="http://www.ittp.co.th/" target="_blank">ITTP</a>.</p><br />
+                <p style={{ fontSize: '20px', color: 'black', fontWeight: 'normal' }}>Financial wellness service for <a alt="ittp" href="http://www.ittp.co.th/" target="_blank" rel="noopener noreferrer">ITTP</a>.</p><br />
               </div>}
             detail={<div style={{ display: 'block' }}>
               <p>I am an intern at Noburo for 2 months, then I became a part time employee until now.</p><br />
