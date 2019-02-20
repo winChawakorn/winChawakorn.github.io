@@ -57,7 +57,7 @@ class About extends Component {
               fontSize: '20px',
               textAlign: 'left'
             }}>
-              <span style={{ marginLeft: '40px' }} />Hello, I'm <b style={{ color: 'blue' }}>Chawakorn</b>. I'm a software developer majoring in software engineering at Kasetsart University.
+              <span style={{ marginLeft: '40px' }} />Hello, I'm <b style={{ color: '#969494' }}>Chawakorn</b>. I'm a software developer majoring in software engineering at Kasetsart University.
               Nowadays, our life has been enhanced by the abilities of technologies, so the influence of technologies make me fell in love with the software developing.
             </p>
           </div>
@@ -80,7 +80,7 @@ class About extends Component {
                 <p>Nationality</p>
                 <p>Education</p>
               </div>
-              <div style={{ width: `55%`, color: 'blue' }}>
+              <div style={{ width: `55%`, color: '#969494' }}>
                 <p>Chawakorn</p>
                 <p>Suphepre</p>
                 <p>Win</p>
@@ -114,7 +114,7 @@ class About extends Component {
                 <p>Email</p>
                 <p>Mobile phone</p>
               </div>
-              <div style={{ width: `55%`, color: 'blue' }}>
+              <div style={{ width: `55%`, color: '#969494' }}>
                 <p>Playing guitar,<br />Singing,<br />Bodybuilding,<br />Watching movie</p>
                 <p>Ladprao, Bangkok</p>
                 <p><Icon name="mail" />win.chawakorn@gmail.com</p>
@@ -126,7 +126,7 @@ class About extends Component {
           <div className="box" style={{ paddingLeft: '0', paddingRight: '0' }}>
             <p className="box-title"><Icon name="star" style={{ color: 'red' }} />Skills</p>
             <div className="about-skill-container">
-              <b className="about-skill-title">Fullstack Web application</b>
+              <b className="about-skill-title">Fullstack web application</b>
               <div className="flexwrap">
                 <img className="about-skill-logo" src={htmlcss} alt="htmlcss-logo" height="70px" />
                 <img className="about-skill-logo" src={js} alt="js-logo" height="70px" />
