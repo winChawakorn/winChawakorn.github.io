@@ -21,8 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build && gh-pages -d build",
+    "deploy": "yarn predeploy && yarn update",
     "update": "git checkout master && git pull --no-edit origin gh-pages && git push origin master && git checkout develop",
     "master": "yarn deploy && yarn update",
     "eject": "react-scripts eject"
